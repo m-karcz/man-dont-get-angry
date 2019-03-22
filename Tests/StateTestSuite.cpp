@@ -1,11 +1,13 @@
 #include <gtest/gtest.h>
 #include <string>
 #include "State.hpp"
+#include "Board.hpp"
 
 using namespace ::testing;
 
 struct StateTestSuite : Test
 {
+    Board b;
 };
 
 TEST_F(StateTestSuite, shouldEvaluateEntryUntilFirstTrueCallback)
